@@ -1,0 +1,7 @@
+{
+  "name": "Mimi Vault",
+  "description": "A secure non-custodial crypto vault dashboard utilizing Project Heimdall's S7 Alpha build. Features self-custody logic, secure transfers, and infrastructure security monitoring.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

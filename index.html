@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimi Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              pixel: ['"Silkscreen"', 'cursive'],
+              mono: ['"Space Mono"', 'monospace'],
+            },
+            colors: {
+              pastel: {
+                bg: '#F9FAFB',     // Changed to Cool Gray 50 (Neutral/Clean)
+                card: '#FFFFFF',
+                purple: '#F3E8FF', // Purple 100 (Softer)
+                pink: '#FCE7F3',   // Pink 100 (Softer)
+                yellow: '#FEFCE8', // Yellow 50 (Creamier)
+                green: '#DCFCE7',  // Green 100 (Softer Mint)
+                blue: '#E0F2FE',   // Sky 100 (Softer Blue)
+                border: '#1C1917', // Keep contrast
+                text: '#1C1917',
+              }
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0px 0px #1C1917',
+              'pixel-sm': '2px 2px 0px 0px #1C1917',
+              'pixel-lg': '6px 6px 0px 0px #1C1917',
+            },
+            borderRadius: {
+              'xl': '12px',
+              '2xl': '16px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9FAFB; /* Updated to match tailwind config */
+        color: #1C1917;
+        font-family: 'Space Mono', monospace;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Silkscreen', cursive;
+      }
+      /* Custom Scrollbar for Cutesy Look */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F9FAFB;
+        border-left: 2px solid #1C1917;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #F3E8FF;
+        border: 2px solid #1C1917;
+        border-radius: 0px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #E9D5FF;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
