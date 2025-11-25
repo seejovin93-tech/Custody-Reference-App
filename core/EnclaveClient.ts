@@ -1,5 +1,5 @@
 export class EnclaveClient {
-    private apiUrl = 'https://ryann-holstered-ludicrously.ngrok-free.dev';
+    private apiUrl = 'custody-reference-app.vercel.app';
 
     async register(publicShareA: string): Promise<string> {
         console.log("[Enclave] Connecting to " + this.apiUrl);
@@ -17,9 +17,9 @@ export class EnclaveClient {
             });
 
             if (!response.ok) throw new Error("Enclave Unreachable");
-            
+
             console.log("[Enclave] Connection Established.");
-            return "04_MOCK_SHARE_B_PUBLIC_KEY"; 
+            return "04_MOCK_SHARE_B_PUBLIC_KEY";
         } catch (e) {
             console.error("Enclave Error:", e);
             throw e;

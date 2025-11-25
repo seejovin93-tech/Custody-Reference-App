@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=VT323&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-pastel-bg text-pastel-text font-sans antialiased;
+  margin: 0;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }
